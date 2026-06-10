@@ -8,25 +8,11 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <title>Lab 10 - Return of the Party Horn</title>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1V86MFKP0V"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-1V86MFKP0V');
-  </script>
-
-  <script>
-     document.addEventListener('DOMContentLoaded', () => {
-         const randomNumber = Math.random();
-         const shouldApplyClass = randomNumber < 0.5;
-         if (shouldApplyClass) {
-              document.querySelector('body').classList.add('blue');
-         }
-     });
-  </script>
-
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WSW26JCG');</script>
   <script src="assets/scripts/js-confetti.browser.js"></script>
 
   <link rel="stylesheet" href="assets/styles/global.css" />
@@ -59,6 +45,14 @@
       <audio class="hidden" src=""></audio>
     </section>
   </main>
+
+  <script>
+     const randomNumber = Math.random();
+     const shouldApplyClass = randomNumber < 0.5;
+     if (shouldApplyClass) {
+          document.querySelector('body').classList.add('blue');
+     }
+  </script>
 </body>
 
 </html>
