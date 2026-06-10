@@ -17,6 +17,16 @@
     gtag('config', 'G-1V86MFKP0V');
   </script>
 
+  <script>
+     const randomNumber = Math.random();
+     const shouldApplyClass = randomNumber < 0.5;
+     if (shouldApplyClass) {
+          document.documentElement.addEventListener('DOMContentLoaded', () => {
+              document.querySelector('body').classList.add('blue');
+          });
+     }
+  </script>
+
   <script src="assets/scripts/js-confetti.browser.js"></script>
 
   <link rel="stylesheet" href="assets/styles/global.css" />
@@ -49,19 +59,6 @@
       <audio class="hidden" src=""></audio>
     </section>
   </main>
-
-  <script>
-     // Generate a random number between 0 and 1
-     const randomNumber = Math.random();
-     // Determine if the class should be applied
-     const shouldApplyClass = randomNumber < 0.5;
-     // Get the body element
-     let body = document.querySelector('body');
-     // Apply or remove the "blue" class based on the random number
-     if (shouldApplyClass) {
-          body.classList.add('blue');
-     }
-  </script>
 </body>
 
 </html>
