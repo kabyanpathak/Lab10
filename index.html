@@ -18,13 +18,13 @@
   </script>
 
   <script>
-     const randomNumber = Math.random();
-     const shouldApplyClass = randomNumber < 0.5;
-     if (shouldApplyClass) {
-          document.documentElement.addEventListener('DOMContentLoaded', () => {
+     document.addEventListener('DOMContentLoaded', () => {
+         const randomNumber = Math.random();
+         const shouldApplyClass = randomNumber < 0.5;
+         if (shouldApplyClass) {
               document.querySelector('body').classList.add('blue');
-          });
-     }
+         }
+     });
   </script>
 
   <script src="assets/scripts/js-confetti.browser.js"></script>
